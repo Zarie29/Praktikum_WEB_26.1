@@ -1,7 +1,3 @@
-// ===============================================
-// Manajemen Data Mahasiswa - JavaScript DOM (versi perbaikan)
-// ===============================================
-
 // ---------- 1. Mengambil elemen dari HTML (getElementById) ----------
 const formMhs = document.getElementById("formMhs");
 const inputNama = document.getElementById("inputNama");

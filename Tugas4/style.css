@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c5fb3;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Kartu statistik */
+.statistik {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.kartu {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    border-top: 4px solid #2c5fb3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kartu h3 {
+    font-size: 14px;
+    color: #666;
+}
+
+.kartu p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #2c5fb3;
+}
+
+/* Box umum */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Form */
+.baris {
+    margin-bottom: 12px;
+}
+
+.baris label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2c5fb3;
+}
+
+#pesanError {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+    min-height: 16px;
+}
+
+/* Tombol */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+}
+
+#btnSimpan {
+    background-color: #2c5fb3;
+}
+
+#btnBatal {
+    background-color: #888;
+    margin-left: 5px;
+}
+
+.btn-edit {
+    background-color: #f0a30a;
+    padding: 5px 10px;
+    margin-right: 4px;
+}
+
+.btn-hapus {
+    background-color: #d93025;
+    padding: 5px 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Alat cari dan filter */
+.alat {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #2c5fb3;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f8ff;
+}
+
+/* Warna keterangan nilai */
+.lulus {
+    color: green;
+    font-weight: bold;
+}
+
+.tidak-lulus {
+    color: red;
+    font-weight: bold;
+}
+
+/* Class untuk menyembunyikan elemen (dipakai di JS dengan classList) */
+.sembunyi {
+    display: none;
+}
+
+#pesanKosong {
+    text-align: center;
+    margin-top: 15px;
+    color: #888;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    .statistik,
+    .alat {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
